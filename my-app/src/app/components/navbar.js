@@ -16,21 +16,25 @@ export default function Navbar() {
 
       {/* Links */}
       <div className="flex gap-8 text-sm font-medium">
-        <a href="#" className="hover:text-pink-400 transition duration-300">About Us</a>
+        
+        <a href="#" className="hover:text-pink-400 transition duration-300">Exams</a>
         <a href="#" className="hover:text-pink-400 transition duration-300">My Exams</a>
+        <a href="#" className="hover:text-pink-400 transition duration-300">About Us</a>
         <a href="#" className="hover:text-pink-400 transition duration-300">Contact Us</a>
+        
+        
       </div>
 
       {/* Right Section */}
       <div className="flex items-center gap-6">
         <Bell className="cursor-pointer hover:text-pink-400 transition" />
 
-        <button className="text-blue-400 underline hover:text-blue-300">
+        {/* <button className="text-blue-400 underline hover:text-blue-300">
           Sign Up
         </button>
         <button className="text-blue-400 underline hover:text-blue-300">
           Sign In
-        </button>
+        </button> */}
       </div>
     </nav>
   );
