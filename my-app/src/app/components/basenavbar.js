@@ -1,9 +1,10 @@
 "use client";
+
 import { Sparkles } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-export default function BaseNavbar() {
-  const router = useRouter(); // ✅ initialize router
+export default function Navbar() {
+  const router = useRouter();
 
   return (
     <nav className="w-full bg-black text-white 
@@ -24,7 +25,7 @@ export default function BaseNavbar() {
       {/* Buttons */}
       <div className="flex gap-4">
         <button
-          onClick={() => router.push("/signup")}   // ✅ redirect
+          onClick={() => router.push("/signup")}
           className="px-4 py-2 rounded-lg border border-blue-400 text-blue-400 
           transition duration-300 hover:bg-blue-400 hover:text-black"
         >
@@ -32,7 +33,7 @@ export default function BaseNavbar() {
         </button>
 
         <button
-          onClick={() => router.push("/signin")}   // ✅ redirect
+          onClick={() => router.push("/signin")}
           className="px-4 py-2 rounded-lg border border-pink-400 text-pink-400 
           transition duration-300 hover:bg-pink-400 hover:text-black"
         >
